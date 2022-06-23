@@ -379,6 +379,7 @@
     border-radius: 2px;
     box-shadow: 0 0 4px #ccc;
     display: none;
+    animation :fadeIn ease-in 0.3s ;
 }
 
 .header__cart-list::after{
