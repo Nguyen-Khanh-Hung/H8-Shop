@@ -36,7 +36,31 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
 }
+
+/* Test */
+
+.grid__colum-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+   
+}
+.grid__colum-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    flex-wrap: wrap;
+}
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+}
+
+
 
 /* Modal */
 
@@ -60,7 +84,7 @@ html{
    margin: auto;
     position: relative;
     z-index: 1;
-   animation:  growth linear 0.3s;
+   animation: growth linear 0.3s;
   
 }
 
@@ -87,17 +111,18 @@ html{
 .btn
 {
     border: none;
-    min-width: 142px;
+    min-width: 90px;
     height: 34px;
     text-decoration: none;
     border-radius: 2px;
     padding: 0 12px;
     color: var(--text-color);
-    background-color: rgb(244, 244, 244);
-    display: flex;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
+    cursor: pointer;
 }
 .btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.1);
@@ -111,4 +136,70 @@ html{
 .btn.btn--primary{
     color: var(--white-color);
     background-color: var(--primary-color);
+}
+
+/* Selection */
+
+.select-input{
+    position: relative;
+    min-width: 180px;
+    height: 34px;
+    display: flex;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    align-items: center;
+    justify-content: space-between;
+}
+.select-input:hover .select-input__list {
+    display: block;
+}
+.select-input__label{
+    font-size: 1.4rem;
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    font-weight: 600;
+    position: relative;
+    top: 1px;
+}
+
+.select-input__list{
+ position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding-left: 0;
+    display: none;
+    box-shadow: 0 0 2px var(--border-color);
+    z-index: 1;
+}
+
+.select-input__list::before{
+    content: "";
+    display: block;
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: -3px;
+}
+
+.select-input__item{
+    padding: 12px 0 8px 12px;
+}
+.select-input__item:hover{
+    background-color: rgb(254, 254, 254);
+    
+}
+.select-input__link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.select-input__item:hover .select-input__link{
+    color: var(--primary-color);
 }
