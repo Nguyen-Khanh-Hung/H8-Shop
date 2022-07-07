@@ -926,7 +926,7 @@ position: relative;
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    padding: 10px 5px;
+    padding: 0 5px;
 }
 
 /* Home sort + filter */
