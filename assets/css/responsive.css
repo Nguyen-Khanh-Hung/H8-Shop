@@ -33,6 +33,13 @@
     .header__sort-bar{
         display: flex;
     }
+    .mobile-category{
+        display: block;
+    }
+    .app__content{
+        margin: 0;
+        padding-top: 10px;
+    }
 }
 /* Tablet */
 @media (min-width:740px) and (max-width:1023px){
@@ -88,9 +95,14 @@
         font-size: 1.6rem;
         min-width: 36px;
     }
-    .app__content{
-        margin: 0;
+ 
+    .header__mobile-search-icon{
+        display: block;
     }
+    .header__logo-img{
+        width: 110px;
+    }
+   
     @keyframes mobileSearchSideIn{
         from{
             opacity: 0;
